@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>App On The Go</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="box">
+            <div class="title"> <h1 style="color: rgb(45, 209, 72) "> App On The Go </h1></div>
+
+            <div class="button">
+                <div id="btt"></div>
+                <button type="button" class="toggle" onclick="login()">Log in</button>
+                <button type="button" class="toggle" onclick="signup()">Sign up</button>
+            </div>
+            
+            <form id="login" class="input">
+                <input type="text" class="ip-field" placeholder="User name or phone number" required>
+                <input type="text" class="ip-field" placeholder="Password" required>
+                <input type="checkbox" class="checkbox"><span class="rmbtext">Remember me</span>
+                <div><button type="checkbox" class="forgot"><h5>Forgot password?</h5></button></div>
+                <button type="submit" class="submitbutton">Log in</button>
+            </form>
+
+            <form id="signup" class="input">
+                <input type="text" class="ip-field" placeholder="User name or phone number" required>
+                <input type="text" class="ip-field" placeholder="Password" required>
+                <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submitbutton">Sign up</button>
+            </form>
+
+            <div class="otherlogin">
+                <img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19748.png" alt="facebook logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt="google logo">
+                <img src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt="twitter logo">
+            </div>
+        </div>
+        
+
+    </div>
+    
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btt");
+
+        function signup(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+
+</body>
+
+</html>
