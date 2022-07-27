@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16,5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 10% auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.title{
+    text-align: center;
+    margin: 25px;
+}
+
+.button{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 10px 2px rgb(2, 10, 122);
+    border-radius: 30px;
+}
+
+.toggle{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btt{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, orange, lightgreen);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.input{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.ip-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 5.5px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgba(27, 87, 199, 0.4);
+    outline: none;
+    background: transparent;
+    color: rgb(117, 177, 28);
+}
+
+.submitbutton{
+    width: 85%;
+    padding: 10px 30px;
+    margin: 20px 26px;
+    cursor: pointer;
+    display: block;
+    background: linear-gradient(to right, orange, lightgreen);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.forgot{
+    width: 70%;
+    margin: 10px 0px 0px 145px;
+    margin-top: -18px;
+    cursor: pointer;
+    color: lightgreen;
+    display: block;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.checkbox{
+    margin: -2px 5px 5px 5px;
+}
+
+span{
+    color: lightgreen;
+    font-size: 12px;
+    position: absolute;
+}
+
+.otherlogin{
+    margin: 280px auto; 
+    text-align: center;
+}
+
+.otherlogin img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 10px 4 lightblue;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#login{
+    left: 50px;
+}
+
+#signup{
+    left: 450px;
+}
