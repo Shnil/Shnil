@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="vn">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>App On The Go</title>
 </head>
@@ -10,7 +11,7 @@
 <body>
     <div class="background">
         <div class="box">
-            <div class="title"> <h1 style="color: rgb(45, 209, 72) "> App On The Go </h1></div>
+            <div class="title"> <h1> App On The Go </h1></div>
 
             <div class="button">
                 <div id="btt"></div>
@@ -19,18 +20,19 @@
             </div>
             
             <form id="login" class="input">
-                <input type="text" class="ip-field" placeholder="User name or phone number" required>
-                <input type="text" class="ip-field" placeholder="Password" required>
-                <input type="checkbox" class="checkbox"><span class="rmbtext">Remember me</span>
-                <div><button type="checkbox" class="forgot"><h5>Forgot password?</h5></button></div>
-                <button type="submit" class="submitbutton">Log in</button>
+                <input id="loginnhap" type="text" class="ip-field" placeholder="User name or phone number" required>
+                <input id="loginpass" type="text" class="ip-field" placeholder="Password" required>
+                <input id="rememberme" type="checkbox" class="checkbox"><span class="rmbtext">Remember me</span>
+                <div><button type="submit" class="forgot"><h5>Forgot password?</h5></button></div>
+                <button type="submit" class="submitbutton" onclick="logIn()">Log in</button>
             </form>
 
-            <form id="signup" class="input">
-                <input type="text" class="ip-field" placeholder="User name or phone number" required>
-                <input type="text" class="ip-field" placeholder="Password" required>
-                <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
-                <button type="submit" class="submitbutton">Sign up</button>
+            
+            <form id="signup" class="input" onsubmit="return false;">
+                <input id="signupnhap" type="text" class="ip-field" placeholder="User name or phone number" required>
+                <input id="signuppass" type="text" class="ip-field" placeholder="Password" required>
+                <input id="t&c" type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submitbutton"  onclick="signUp()">Sign up</button>
             </form>
 
             <div class="otherlogin">
@@ -43,23 +45,7 @@
 
     </div>
     
-    <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("signup");
-        var z = document.getElementById("btt");
-
-        function signup(){
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "110px";
-        }
-
-        function login(){
-            x.style.left = "50px";
-            y.style.left = "450px";
-            z.style.left = "0";
-        }
-    </script>
+    <script src="./main.js"></script>
 
 </body>
 
