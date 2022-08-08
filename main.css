@@ -29,6 +29,7 @@ html {
 }
 
 .title{
+    color: rgb(45, 209, 72);
     text-align: center;
     margin: 25px;
 }
@@ -42,12 +43,13 @@ html {
 }
 
 .toggle{
-    padding: 10px 30px;
+    padding: 10px 33.6px;
     cursor: pointer;
     background: transparent;
     border: 0;
     outline: none;
     position: relative;
+    text-align: center;
 }
 
 #btt{
