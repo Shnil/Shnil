@@ -100,7 +100,7 @@ html {
     margin: 10px 0px 0px 145px;
     margin-top: -18px;
     cursor: pointer;
-    color: lightgreen;
+    color: green;
     display: block;
     background: transparent;
     border: 0;
@@ -114,7 +114,7 @@ html {
 }
 
 span{
-    color: lightgreen;
+    color: green;
     font-size: 12px;
     position: absolute;
 }
