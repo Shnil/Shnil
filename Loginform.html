@@ -19,15 +19,14 @@
                 <button type="button" class="toggle" onclick="signup()">Sign up</button>
             </div>
             
-            <form id="login" class="input">
-                <input id="loginnhap" type="text" class="ip-field" placeholder="User name or phone number" required>
-                <input id="loginpass" type="text" class="ip-field" placeholder="Password" required>
+            <form id="login" class="input" onsubmit="return false;">
+                <input id="loginnhap" type="text" class="ip-field" placeholder="User name or phone number">
+                <input id="loginpass" type="text" class="ip-field" placeholder="Password">
                 <input id="rememberme" type="checkbox" class="checkbox"><span class="rmbtext">Remember me</span>
                 <div><button type="submit" class="forgot"><h5>Forgot password?</h5></button></div>
                 <button type="submit" class="submitbutton" onclick="logIn()">Log in</button>
             </form>
 
-            
             <form id="signup" class="input" onsubmit="return false;">
                 <input id="signupnhap" type="text" class="ip-field" placeholder="User name or phone number" required>
                 <input id="signuppass" type="text" class="ip-field" placeholder="Password" required>
